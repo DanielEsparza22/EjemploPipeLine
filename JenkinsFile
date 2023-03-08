@@ -4,7 +4,7 @@ pipeline {
         stage('analisis-codigo') {
             steps {
                 sh 'flake8 --max-complexity=10 --max-line-length=100 .'
-                sh 'echo "Ejecuta SonaQube"'
+                sh 'echo "Ejecuta SonarQube"'
             }
         }
         stage('test') {
